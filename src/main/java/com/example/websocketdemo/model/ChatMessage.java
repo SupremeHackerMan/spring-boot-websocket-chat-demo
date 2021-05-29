@@ -7,6 +7,7 @@ public class ChatMessage {
     private MessageType type;
     private String content;
     private String sender;
+    private String room;
 
     public enum MessageType {
         CHAT,
@@ -32,6 +33,10 @@ public class ChatMessage {
 
     public String getSender() {
         return sender;
+    }
+    
+    public String getRoomName() {
+        return room;
     }
 
     public void setSender(String sender) {
